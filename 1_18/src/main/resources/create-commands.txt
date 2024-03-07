@@ -1,0 +1,10 @@
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
+
+# compile application
+mvn clean compile package
+
+# upload to Amazon S3
+aws s3 cp target/amazon-msf-java-stream-app-1.0.jar s3://flink-version-upgrades/1_15/amazon-msf-java-stream-app-1.0.jar
+
+# create application
+aws kinesisanalyticsv2 create-application --cli-input-json file:///User/Documents/version-upgrades/VersionUpgrade/1_18/src/main/resources/create-request.json

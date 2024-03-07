@@ -1,0 +1,36 @@
+{
+  "ApplicationName": "Kinesis_1_8",
+  "ApplicationDescription": "my java test app",
+  "RuntimeEnvironment": "FLINK-1_8",
+  "ServiceExecutionRole": "arn:aws:iam::123456789101:role/MF-stream-rw-role",
+  "ApplicationConfiguration": {
+    "ApplicationCodeConfiguration": {
+      "CodeContent": {
+        "S3ContentLocation": {
+          "BucketARN": "arn:aws:s3:::flink-version-upgrades",
+          "FileKey": "1_8/amazon-msf-java-stream-app-1.0.jar"
+        }
+      },
+      "CodeContentType": "ZIPFILE"
+    },
+    "EnvironmentProperties":  {
+      "PropertyGroups": [
+        {
+          "PropertyGroupId": "ProducerConfigProperties",
+          "PropertyMap" : {
+            "flink.stream.initpos" : "LATEST",
+            "aws.region" : "us-west-1",
+            "AggregationEnabled" : "false"
+          }
+        },
+        {
+          "PropertyGroupId": "ConsumerConfigProperties",
+          "PropertyMap" : {
+            "aws.region" : "us-west-1"
+          }
+        }
+      ]
+    }
+  }
+}
+
