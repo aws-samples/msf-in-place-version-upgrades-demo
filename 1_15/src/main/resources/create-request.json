@@ -2,7 +2,7 @@
   "ApplicationName": "Kinesis_1_15",
   "ApplicationDescription": "my java test app",
   "RuntimeEnvironment": "FLINK-1_15",
-  "ServiceExecutionRole": "arn:aws:iam::143479883528:role/MF-stream-rw-role",
+  "ServiceExecutionRole": "arn:aws:iam::123456789101:role/MF-stream-rw-role",
   "ApplicationConfiguration": {
     "ApplicationCodeConfiguration": {
       "CodeContent": {

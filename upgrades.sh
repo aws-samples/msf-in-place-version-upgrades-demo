@@ -1,10 +1,13 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+
 setopt interactivecomments
 export appName=my-version-upgrade-flink-application
 export region=us-west-1
 export runtimeEnv1_15=FLINK-1_15
 export runtimeEnv1_18=FLINK-1_18
 export bucketArn=arn:aws:s3:::flink-version-upgrades
-export serviceExecutionRole=arn:aws:iam::143479883528:role/MF-stream-rw-role
+export serviceExecutionRole=arn:aws:iam::123456789101:role/MF-stream-rw-role
 
 # create 1.15 application
 

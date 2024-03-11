@@ -1,3 +1,6 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+
 setopt interactivecomments
 export appName=my-upgrade-application
 export region=us-west-1
