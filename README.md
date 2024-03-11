@@ -10,4 +10,3 @@ But two fully illustrative demos are available in the root of the project, simul
 2. Upload the application artifact to Amazon S3
 3. Update the code in [upgrades.sh](upgrades.sh) to match the location of your application artifact(s).
 4. Run the commands sequentially.
-
